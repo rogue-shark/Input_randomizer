@@ -1,4 +1,4 @@
-<h1 align="center">Rotating Navigation</h1>
+<h1 align="center">Input Randomizer</h1>
 
 <div align="center">
    #50days50projects</a>.
@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="">
+    <a href="https://rogue-shark.github.io/Input_randomizer">
       D E M O
     </a>
     <span> | </span>
