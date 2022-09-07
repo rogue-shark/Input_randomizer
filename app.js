@@ -2,7 +2,7 @@ const textarea = document.getElementById('text-area')
 const tagsEl = document.getElementById('tags')
 //@last styling h1 
 const h1 = document.querySelector('h1')
-let styles = {  // object -> styles
+const styles = {  // object -> styles
     "background-color": "gold",
     "color": "#000",
     "border": "2px solid rgb(26, 24, 24)"
@@ -65,7 +65,10 @@ function randomSelect() {
             const randomTag = pickRandomTag()
 
             highlightTag(randomTag)
-            Object.assign(h1.style, styles) //h1 style i.e. Object.assign(target, source)
+
+            //h1 style i.e. Object.assign(target, source)
+            Object.assign(h1.style, styles)  
+            h1.innerText = 'Input Randomized!'
         }, 100)
 
     }, times * 100)
