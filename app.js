@@ -1,5 +1,12 @@
 const textarea = document.getElementById('text-area')
 const tagsEl = document.getElementById('tags')
+//@last styling h1 
+const h1 = document.querySelector('h1')
+let styles = {  // object -> styles
+    "background-color": "gold",
+    "color": "#000",
+    "border": "2px solid rgb(26, 24, 24)"
+};
 
 //1.
 textarea.addEventListener('keyup', (e) => {
@@ -58,10 +65,11 @@ function randomSelect() {
             const randomTag = pickRandomTag()
 
             highlightTag(randomTag)
+            Object.assign(h1.style, styles) //h1 style i.e. Object.assign(target, source)
         }, 100)
 
     }, times * 100)
-
+   
 }
 
 function pickRandomTag() {
@@ -77,3 +85,4 @@ function highlightTag(tag) {
 function unHighlightTag(tag) {
     tag.classList.remove('winner')
 }
+
